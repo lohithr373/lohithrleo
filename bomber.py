@@ -121,9 +121,9 @@ def do_zip_update():
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update LOHITH.")
+        mesgdcrt.FailureMessage("Unable to update lohithrleo.")
         mesgdcrt.WarningMessage(
-            "Grab The Latest one From https://github.com/TheSpeedX/LOHITH.git")
+            "Grab The Latest one From https://github.com/lohithr373/lohithrleo.git")
 
     sys.exit()
 
@@ -148,16 +148,16 @@ def do_git_update():
     print("\n")
 
     if success:
-        mesgdcrt.SuccessMessage("LOHITH was updated to the latest version")
+        mesgdcrt.SuccessMessage("lohithrleo was updated to the latest version")
         mesgdcrt.GeneralMessage(
             "Please run the script again to load the latest version")
     else:
-        mesgdcrt.FailureMessage("Unable to update LOHITH.")
+        mesgdcrt.FailureMessage("Unable to update lohithrleo.")
         mesgdcrt.WarningMessage("Make Sure To Install 'git' ")
         mesgdcrt.GeneralMessage("Then run command:")
         print(
             "git checkout . && "
-            "git pull https://github.com/TheSpeedX/LOHITH.git HEAD")
+            "git pull https://github.com/lohithr373/lohithrleo.git HEAD")
     sys.exit()
 
 
@@ -182,7 +182,7 @@ def check_for_updates():
         mesgdcrt.GeneralMessage("Starting update...")
         update()
     else:
-        mesgdcrt.SuccessMessage("LOHITH is up-to-date")
+        mesgdcrt.SuccessMessage("lohithleo is up-to-date")
         mesgdcrt.GeneralMessage("Starting LOHITH")
 
 
@@ -245,7 +245,7 @@ def pretty_print(cc, target, success, failed):
     mesgdcrt.GeneralMessage("Failed       : " + str(failed))
     mesgdcrt.WarningMessage(
         "This tool was made for fun and research purposes only")
-    mesgdcrt.SuccessMessage("LOHITH was created by SpeedX")
+    mesgdcrt.SuccessMessage("lohithrleo was created by SpeedX")
 
 
 def workernode(mode, cc, target, count, delay, max_threads):
@@ -366,7 +366,7 @@ def selectnode(mode="sms"):
 
 mesgdcrt = MessageDecorator("icon")
 if sys.version_info[0] != 3:
-    mesgdcrt.FailureMessage("LOHITH will work only in Python v3")
+    mesgdcrt.FailureMessage("lohithrleo will work only in Python v3")
     sys.exit()
 
 try:
@@ -385,32 +385,32 @@ RESET_ALL = Style.RESET_ALL
 ASCII_MODE = False
 DEBUG_MODE = False
 
-description = """LOHITH - Your Friendly Spammer Application
+description = """lohithleo - Your Friendly Spammer Application
 
 LOHITH can be used for many purposes which incudes -
 \t Exposing the vulnerable APIs over Internet
 \t Friendly Spamming
 \t Testing Your Spam Detector and more ....
 
-LOHITH is not intented for malicious uses.
+lohithrleo is not intented for malicious uses.
 """
 
 parser = argparse.ArgumentParser(description=description,
                                  epilog='Coded by SpeedX !!!')
 parser.add_argument("-sms", "--sms", action="store_true",
-                    help="start LOHITH with SMS Bomb mode")
+                    help="start lohithrleo with SMS Bomb mode")
 parser.add_argument("-call", "--call", action="store_true",
-                    help="start LOHITH with CALL Bomb mode")
+                    help="start lohithrleo with CALL Bomb mode")
 parser.add_argument("-mail", "--mail", action="store_true",
-                    help="start LOHITH with MAIL Bomb mode")
+                    help="start lohithrleo with MAIL Bomb mode")
 parser.add_argument("-ascii", "--ascii", action="store_true",
                     help="show only characters of standard ASCII set")
 parser.add_argument("-u", "--update", action="store_true",
-                    help="update LOHITH")
+                    help="update lohithrleo")
 parser.add_argument("-c", "--contributors", action="store_true",
-                    help="show current LOHITH contributors")
+                    help="show current lohithrleo contributors")
 parser.add_argument("-v", "--version", action="store_true",
-                    help="show current LOHITH version")
+                    help="show current lohithleo version")
 
 
 if __name__ == "__main__":
